@@ -8,5 +8,6 @@ import com.autosco.autoscolombia.Model.User;
 @Repository
 
 public interface UserRepository extends JpaRepository<User, Long> {
-        
+    User findByDocument(String document);
+    User findByEmail(String email);
 }

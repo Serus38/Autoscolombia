@@ -49,6 +49,14 @@ public class UserController {
         if (result.hasErrors()){
             return "users/newuser";
         }
+
+        // Verificar si el documento ya existe
+        User existingUser = userService.findByDocument(user.getDocument());
+        if (existingUser != null && (user.getId() == null || !existingUser.getId().equals(user.getId()))) {
+            redirectAttrs.addFlashAttribute("mensaje", "El documento ya existe. Por favor, ingrese uno diferente.");
+            return "redirect:/users/crear";
+        }
+
         userService.save(user);
         redirectAttrs.addFlashAttribute("mensaje", "Registro guardado");
         return "redirect:/users/listar";

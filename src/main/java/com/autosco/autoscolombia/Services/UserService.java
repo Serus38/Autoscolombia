@@ -14,5 +14,7 @@ public interface UserService {
     void delete(Long id);
     void update(User user);
     User getUserById(Long id);
+    User findByDocument(String document);
+    User findByEmail(String email);
     
 }

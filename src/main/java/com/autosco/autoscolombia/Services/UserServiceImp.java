@@ -41,4 +41,14 @@ public class UserServiceImp implements UserService {
         return (List<User>) userRepository.findAll();
     }
 
+    @Override  
+    public User findByDocument (String document) {
+        return userRepository.findByDocument(document);
+    }
+
+    @Override
+    public User findByEmail (String email) {
+        return userRepository.findByEmail(email);
+    }
+
 }   
