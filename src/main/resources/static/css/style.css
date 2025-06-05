@@ -283,6 +283,22 @@ a {
     margin-right: auto; /* Centrar horizontalmente */
 }
 
+.alert-success {
+    background-color: #d4edda; /* Fondo verde claro */
+    color: #155724; /* Texto verde oscuro */
+    border: 1px solid #c3e6cb; /* Borde verde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 20px; /* Separación superior */
+    width: 50%; /* Ancho del mensaje */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+}
+
 .card {
     background-color: #fddb00; /* Fondo claro */
     border: 1px solid #ddd; /* Borde gris claro */

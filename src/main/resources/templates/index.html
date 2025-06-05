@@ -21,7 +21,7 @@
                 <p class="card-text">La tarifa del parqueadero para el año 2025 es de <strong>$3.500 </strong>pesos la hora.</p>
                 <p class="card-text">La tarifa para 12 horas sera de <strong>$25.000.</strong></p>
                 <p class="card-text">La tarifa para 24 horas sera de <strong>$42.000.</strong></p>
-                <p class="card-text">La tarifa para mensualidad sera de <strong>$100.000.</strong></p>
+                <p class="card-text">La tarifa para mensualidad sera de <strong>$130.000.</strong></p>
 
             </div>
         </div>
@@ -32,16 +32,6 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script>
-        // Esperar 5 segundos y ocultar el mensaje
-        setTimeout(function() {
-            const mensaje = document.getElementById('mensaje');
-            if (mensaje) {
-                mensaje.style.transition = 'opacity 0.5s ease'; // Transición suave
-                mensaje.style.opacity = '0'; // Cambiar la opacidad a 0
-                setTimeout(() => mensaje.remove(), 300); // Eliminar el elemento después de la transición
-            }
-        }, 3000);
-    </script>
+    <script th:src="@{/js/mensaje.js}"></script>
 </body>
 </html>
